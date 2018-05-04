@@ -12,6 +12,7 @@ unzip -q -o -d "scripts" "appcenter-build-assets-latest.zip"
 
 ls -l -a "scripts"
 
+cd scripts
 sed -i.bak 's/\(tr -d .*\)/\1\'$'\necho "##vso[task.setvariable variable=APPLE_PROV_PROFILE_UUID]$UUID"/g' determine-signing-style-and-pods-update.sh
 
 cd lib-build-xcproject-analyzer

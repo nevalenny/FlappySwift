@@ -17,3 +17,4 @@ sed -i.bak 's/\(tr -d .*\)/\1\'$'\necho "##vso[task.setvariable variable=APPLE_P
 
 cd lib-build-xcproject-analyzer
 npm i yargs
+npm i lodash
